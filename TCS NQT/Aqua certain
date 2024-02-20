@@ -1,0 +1,12 @@
+https://prepinsta.com/tcs-nqt/placement-papers/coding-questions/
+
+string=str(input())
+n=int(input())
+list1=[]
+maxi=0
+for i in string:
+    list1+=[i]
+    if(len(list1)==n):
+        maxi=max(maxi,list1.count('a'))
+        list1=[]
+print(max(maxi,list1.count('a')))
