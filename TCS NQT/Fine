@@ -1,0 +1,18 @@
+https://prepinsta.com/tcs-nqt/placement-papers/coding-questions/
+
+n=int(input())
+list1=[]
+for i in range(n):
+    list1+=[int(input())]
+d=int(input())
+fine=int(input())
+sum=0
+if(d%2==0):
+    for i in list1:
+        if(i%2!=0):
+            sum=sum+fine
+else:
+    for i in list1:
+        if(i%2==0):
+            sum=sum+fine
+print(sum)
