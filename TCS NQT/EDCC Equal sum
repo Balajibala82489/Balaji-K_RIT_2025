@@ -1,0 +1,13 @@
+from itertools import combinations
+n=int(input())
+list1=[]
+for i in range(1,n+1):
+    list1+=[i]
+divider=len(list1)//2
+comb=combinations(list1,divider)
+count=0
+equal=(n*(n+1))//4
+for i in comb:
+    if sum(i)==equal:
+        count+=1
+print(count)
